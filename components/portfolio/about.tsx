@@ -11,15 +11,15 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              6 ans d&apos;experience en administration systeme, virtualisation VMware, 
-              routing LAN/WAN et securite SI. Master 2 obtenu en alternance en France, 
+              6 ans d&apos;experience en administration systeme, virtualisation, 
+              routing LAN/WAN et securite SI. Master 2 obtenu en alternance chez Optical Networks, 
               actuellement chez Huawei Senegal.
             </p>
             <p>
               Technologies maitrisees :
             </p>
             <ul className="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
-              {["VMware vSphere", "Windows Server", "Linux (Ubuntu, Debian, Red Hat)", "Python / Bash", "Cisco / Huawei Routing", "Veeam Backup"].map((tech) => (
+              {["Virtualisation", "Windows Server", "Linux", "Python / Bash / C / Assembleur", "Cisco / Huawei Routing"].map((tech) => (
                 <li key={tech} className="flex items-center gap-2">
                   <span className="text-foreground">▹</span>
                   {tech}

@@ -13,8 +13,8 @@ export function Hero() {
           Ingenieur Systeme et Reseau.
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed mb-12">
-          6 ans d&apos;experience en infrastructures IT. Administration systeme, 
-          virtualisation, routing et securite reseau sont au coeur de mon expertise.
+          Administration systeme, virtualisation, routing et securite reseau 
+          sont au coeur de mon expertise.
         </p>
         <div className="flex gap-4">
           <Button asChild size="lg" variant="outline" className="px-8">

@@ -19,6 +19,16 @@ const experiences = [
     period: "Aout 2025 - Septembre 2025",
     description: "Participation a la mise sur pied de l'infrastructure et systeme du nouveau bureau Huawei Bissau. Mise en place du nouveau reseau residence Huawei Bissau avec les standards Starlink.",
     tags: ["Infrastructure", "Starlink", "Deploiement reseau"],
+    isSubEntity: true,
+    featured: true,
+  },
+  {
+    title: "Mission Gambie",
+    company: "Huawei Gambie",
+    period: "2025",
+    description: "Mission de deploiement et support infrastructure reseau pour le bureau Huawei Gambie.",
+    tags: ["Infrastructure", "Deploiement reseau"],
+    isSubEntity: true,
     featured: true,
   },
   {
@@ -49,31 +59,33 @@ export function Projects() {
                 index % 2 === 1 ? "md:text-right" : ""
               }`}
             >
-              <div className={`md:col-span-7 ${index % 2 === 1 ? "md:col-start-6" : ""}`}>
-                <Card className="overflow-hidden bg-muted/50 border-0">
-                  <CardContent className="p-0">
-                    {project.image ? (
-                      <div className="aspect-video relative">
-                        <Image 
-                          src={project.image} 
-                          alt={project.company}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    ) : (
-                      <div className="aspect-video bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
-                        <Building2 className="w-16 h-16 text-muted-foreground/30" />
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </div>
+              {!project.isSubEntity && (
+                <div className={`md:col-span-7 ${index % 2 === 1 ? "md:col-start-6" : ""}`}>
+                  <Card className="overflow-hidden bg-muted/50 border-0">
+                    <CardContent className="p-0">
+                      {project.image ? (
+                        <div className="aspect-video relative">
+                          <Image 
+                            src={project.image} 
+                            alt={project.company}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                      ) : (
+                        <div className="aspect-video bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
+                          <Building2 className="w-16 h-16 text-muted-foreground/30" />
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                </div>
+              )}
               
-              <div className={`md:col-span-6 ${
-                index % 2 === 1 
+              <div className={`${project.isSubEntity ? "md:col-span-12" : "md:col-span-6"} ${
+                index % 2 === 1 && !project.isSubEntity
                   ? "md:col-start-1 md:row-start-1" 
-                  : "md:col-start-6"
+                  : !project.isSubEntity ? "md:col-start-6" : ""
               } md:-mt-0 relative z-10`}>
                 <p className="text-muted-foreground font-mono text-sm mb-2">{project.period}</p>
                 <h3 className="text-xl md:text-2xl font-bold mb-1">{project.title}</h3>

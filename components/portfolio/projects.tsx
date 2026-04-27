@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ExternalLink, Building2 } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -9,6 +10,7 @@ const experiences = [
     period: "Fevrier 2025 - Present",
     description: "Refonte et mise en place du systeme video-surveillance et controle d'acces du bureau central Huawei Dakar. Membre du comite Cyber Security & Privacy Protection Governance. Administration de l'infrastructure systeme et reseau.",
     tags: ["Video-surveillance", "Controle d'acces", "Cybersecurite", "Administration reseau"],
+    image: "/images/huawei-office.jpg",
     featured: true,
   },
   {
@@ -17,6 +19,7 @@ const experiences = [
     period: "Aout 2025 - Septembre 2025",
     description: "Participation a la mise sur pied de l'infrastructure et systeme du nouveau bureau Huawei Bissau. Mise en place du nouveau reseau residence Huawei Bissau avec les standards Starlink.",
     tags: ["Infrastructure", "Starlink", "Deploiement reseau"],
+    image: "/images/huawei-office.jpg",
     featured: true,
   },
   {
@@ -50,9 +53,20 @@ export function Projects() {
               <div className={`md:col-span-7 ${index % 2 === 1 ? "md:col-start-6" : ""}`}>
                 <Card className="overflow-hidden bg-muted/50 border-0">
                   <CardContent className="p-0">
-                    <div className="aspect-video bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
-                      <Building2 className="w-16 h-16 text-muted-foreground/30" />
-                    </div>
+                    {project.image ? (
+                      <div className="aspect-video relative">
+                        <Image 
+                          src={project.image} 
+                          alt={project.company}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-video bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
+                        <Building2 className="w-16 h-16 text-muted-foreground/30" />
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </div>

@@ -12,14 +12,14 @@ export function About() {
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
               6 ans d&apos;experience en administration systeme, virtualisation, 
-              routing LAN/WAN et securite SI. Master 2 obtenu en alternance chez Optical Networks, 
+              routing LAN/WAN et securite SI. Master 2 obtenu en alternance chez Optical Networks Paris, 
               actuellement chez Huawei Senegal.
             </p>
             <p>
               Technologies maitrisees :
             </p>
             <ul className="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
-              {["Virtualisation", "Windows Server", "Linux", "Python / Bash / C / Assembleur", "Cisco / Huawei Routing"].map((tech) => (
+              {["Virtualisation", "Windows Server", "Linux", "Python / Bash / C / Assembleur x86", "Cisco / Huawei Routing"].map((tech) => (
                 <li key={tech} className="flex items-center gap-2">
                   <span className="text-foreground">▹</span>
                   {tech}

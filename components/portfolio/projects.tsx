@@ -35,6 +35,7 @@ const opticalExperience = {
   period: "Juin 2021 - Janvier 2024",
   description: "Administration des serveurs (AD, WSUS, Exchange, GPO). Administration reseau, switch et routeur Cisco. Gestion de la securite informatique et sauvegarde Veeam. Mise en place de scripts d'automatisation sous Centreon et Nagios.",
   tags: ["Active Directory", "Cisco", "VMware ESX 8.0", "Veeam", "Centreon", "Nagios"],
+  image: "/images/optical-networks-logo.jpg",
 }
 
 export function Projects() {
@@ -112,12 +113,17 @@ export function Projects() {
             </div>
           </div>
 
-          {/* Separator with Optical Networks Placeholder */}
+          {/* Optical Networks Section */}
           <div className="pt-8">
-            <Card className="overflow-hidden bg-muted/50 border-0 mb-8 max-w-xs">
+            <Card className="overflow-hidden bg-muted/50 border-0 mb-8 md:max-w-md">
               <CardContent className="p-0">
-                <div className="aspect-square bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
-                  <Building2 className="w-12 h-12 text-muted-foreground/30" />
+                <div className="aspect-video relative">
+                  <Image 
+                    src={opticalExperience.image} 
+                    alt={opticalExperience.company}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </CardContent>
             </Card>

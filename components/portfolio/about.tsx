@@ -11,18 +11,12 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Ingenieur systeme et reseau avec 6 ans d&apos;experience, je maitrise 
-              l&apos;administration de serveurs, la virtualisation sous VMware, le 
-              deploiement d&apos;infrastructures LAN/WAN et la securisation des SI.
+              6 ans d&apos;experience en administration systeme, virtualisation VMware, 
+              routing LAN/WAN et securite SI. Master 2 obtenu en alternance en France, 
+              actuellement chez Huawei Senegal.
             </p>
             <p>
-              Forme en alternance pendant 2 ans en France, j&apos;ai obtenu mon Master 2 
-              en ingenierie informatique a Mediaschool Iris. J&apos;ai ensuite integre 
-              Huawei Senegal ou j&apos;interviens sur l&apos;administration reseau, 
-              le hardening systeme et le monitoring d&apos;infrastructures critiques.
-            </p>
-            <p>
-              Voici les technologies avec lesquelles je travaille regulierement :
+              Technologies maitrisees :
             </p>
             <ul className="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
               {["VMware vSphere", "Windows Server", "Linux (Ubuntu, Debian, Red Hat)", "Python / Bash", "Cisco / Huawei Routing", "Veeam Backup"].map((tech) => (

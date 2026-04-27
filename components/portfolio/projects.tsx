@@ -89,37 +89,35 @@ export function Projects() {
             </div>
 
             {/* Huawei Missions - Aligned */}
-            <div className="grid md:grid-cols-2 gap-6 md:ml-8">
+            <div className="grid md:grid-cols-2 gap-6 ml-4 md:ml-8 border-l-2 border-primary/20 pl-6">
               {huaweiMissions.map((mission) => (
-                <div key={mission.title}>
-                  <p className="text-muted-foreground font-mono text-sm mb-2">{mission.period}</p>
-                  <h4 className="text-lg font-bold mb-1">{mission.title}</h4>
-                  <p className="text-primary font-medium text-sm mb-3">{mission.company}</p>
-                  <Card className="mb-3 bg-card shadow-md">
-                    <CardContent className="p-4">
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {mission.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <div className="flex flex-wrap gap-2">
-                    {mission.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="font-mono text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
+                <Card key={mission.title} className="bg-card shadow-md h-full">
+                  <CardContent className="p-5">
+                    <p className="text-muted-foreground font-mono text-xs mb-2">{mission.period}</p>
+                    <h4 className="text-base font-bold mb-1">{mission.title}</h4>
+                    <p className="text-primary font-medium text-sm mb-3">{mission.company}</p>
+                    <p className="text-muted-foreground leading-relaxed text-sm mb-4">
+                      {mission.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {mission.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary" className="font-mono text-xs">
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
 
           {/* Separator with Optical Networks Placeholder */}
           <div className="pt-8">
-            <Card className="overflow-hidden bg-muted/50 border-0 mb-8">
+            <Card className="overflow-hidden bg-muted/50 border-0 mb-8 max-w-xs">
               <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
-                  <Building2 className="w-16 h-16 text-muted-foreground/30" />
+                <div className="aspect-square bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
+                  <Building2 className="w-12 h-12 text-muted-foreground/30" />
                 </div>
               </CardContent>
             </Card>

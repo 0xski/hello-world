@@ -10,7 +10,7 @@ const experiences = [
     period: "Fevrier 2025 - Present",
     description: "Refonte et mise en place du systeme video-surveillance et controle d'acces du bureau central Huawei Dakar. Membre du comite Cyber Security & Privacy Protection Governance. Administration de l'infrastructure systeme et reseau.",
     tags: ["Video-surveillance", "Controle d'acces", "Cybersecurite", "Administration reseau"],
-    image: "/images/huawei-office.jpg",
+    image: "/images/huawei-logo.jpg",
     featured: true,
   },
   {
@@ -19,7 +19,6 @@ const experiences = [
     period: "Aout 2025 - Septembre 2025",
     description: "Participation a la mise sur pied de l'infrastructure et systeme du nouveau bureau Huawei Bissau. Mise en place du nouveau reseau residence Huawei Bissau avec les standards Starlink.",
     tags: ["Infrastructure", "Starlink", "Deploiement reseau"],
-    image: "/images/huawei-office.jpg",
     featured: true,
   },
   {

@@ -11,14 +11,15 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Bonjour ! Je suis Lamine, ingenieur systeme et reseau avec 6 ans d&apos;experience, 
-              base a Dakar. Je concois des architectures IT fiables et performantes, de la 
-              virtualisation a la securite des infrastructures critiques.
+              Ingenieur systeme et reseau avec 6 ans d&apos;experience, je maitrise 
+              l&apos;administration de serveurs, la virtualisation sous VMware, le 
+              deploiement d&apos;infrastructures LAN/WAN et la securisation des SI.
             </p>
             <p>
-              Diplome d&apos;un Master 2 en ingenierie informatique de Mediaschool Iris, 
-              j&apos;interviens actuellement chez Huawei Senegal sur des projets d&apos;envergure : 
-              deploiement de systemes de surveillance, administration reseau et mise en conformite securitaire.
+              Forme en alternance pendant 2 ans en France, j&apos;ai obtenu mon Master 2 
+              en ingenierie informatique a Mediaschool Iris. J&apos;ai ensuite integre 
+              Huawei Senegal ou j&apos;interviens sur l&apos;administration reseau, 
+              le hardening systeme et le monitoring d&apos;infrastructures critiques.
             </p>
             <p>
               Voici les technologies avec lesquelles je travaille regulierement :

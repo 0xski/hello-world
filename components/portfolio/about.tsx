@@ -11,14 +11,14 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Bonjour ! Je suis Lamine, un ingenieur systeme et reseau base a Dakar, Senegal. 
-              Je suis passionne par la mise en place d&apos;infrastructures robustes et securisees, 
-              ainsi que par la resolution de problemes complexes lies aux reseaux et systemes.
+              Bonjour ! Je suis Lamine, ingenieur systeme et reseau avec 6 ans d&apos;experience, 
+              base a Dakar. Je concois des architectures IT fiables et performantes, de la 
+              virtualisation a la securite des infrastructures critiques.
             </p>
             <p>
-              Apres l&apos;obtention de mon Master 2 en ingenierie informatique a Mediaschool Iris, 
-              j&apos;ai rejoint l&apos;equipe de Huawei Senegal ou je travaille sur la securite, 
-              l&apos;administration reseau et la mise en place de systemes de video-surveillance.
+              Diplome d&apos;un Master 2 en ingenierie informatique de Mediaschool Iris, 
+              j&apos;interviens actuellement chez Huawei Senegal sur des projets d&apos;envergure : 
+              deploiement de systemes de surveillance, administration reseau et mise en conformite securitaire.
             </p>
             <p>
               Voici les technologies avec lesquelles je travaille regulierement :

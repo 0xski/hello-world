@@ -13,9 +13,9 @@ export function Hero() {
           Ingenieur Systeme et Reseau.
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed mb-12">
-          Ingenieur en informatique specialise en reseau et systeme, avec 5 annees 
-          d&apos;experience. Je contribue au developpement de projets informatiques 
-          innovants et a la securisation des infrastructures.
+          Fort de 6 annees d&apos;experience en infrastructures IT, je concois et 
+          securise des systemes reseau performants. Administration, virtualisation 
+          et deploiement cloud sont au coeur de mon expertise.
         </p>
         <div className="flex gap-4">
           <Button asChild size="lg" variant="outline" className="px-8">
